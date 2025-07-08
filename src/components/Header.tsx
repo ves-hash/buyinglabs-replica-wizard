@@ -22,9 +22,9 @@ const Header = () => {
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">BL</span>
+                <span className="text-primary-foreground font-bold text-sm">WB</span>
               </div>
-              <span className="text-xl font-bold text-foreground">Buying Labs</span>
+              <span className="text-xl font-bold text-foreground">WholeBeauty</span>
             </a>
           </div>
 

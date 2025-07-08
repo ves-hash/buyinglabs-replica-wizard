@@ -1,28 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import beautyImage from "@/assets/beauty-category.jpg";
-import homeImage from "@/assets/home-category.jpg";
-import fashionImage from "@/assets/fashion-category.jpg";
+import skincareImage from "@/assets/skincare-category.jpg";
+import fragranceImage from "@/assets/fragrance-category.jpg";
 
 const Divisions = () => {
   const categories = [
     {
-      title: "Beauty",
-      description: "We distribute beauty products from a wide range of premium brands. This includes fragrances, make-up, and personal care products.",
+      title: "Makeup & Color Cosmetics",
+      description: "Complete range of color cosmetics including foundations, lipsticks, eyeshadows, mascaras, and makeup tools from leading beauty brands worldwide.",
       image: beautyImage,
-      alt: "Beauty products including fragrances and make-up"
+      alt: "Makeup and color cosmetics including foundations and lipsticks"
     },
     {
-      title: "Home & Living",
-      description: "Premium home decor, furniture, and living accessories from trusted suppliers worldwide for sophisticated interiors.",
-      image: homeImage,
-      alt: "Home and living products and decor"
+      title: "Skincare & Treatments",
+      description: "Premium skincare solutions including serums, moisturizers, cleansers, anti-aging treatments, and specialized skincare products for all skin types.",
+      image: skincareImage,
+      alt: "Skincare products and treatments"
     },
     {
-      title: "Fashion",
-      description: "High-quality fashion items, accessories, and lifestyle products from renowned brands for discerning customers.",
-      image: fashionImage,
-      alt: "Fashion and lifestyle products"
+      title: "Fragrances & Personal Care",
+      description: "Luxury fragrances, perfumes, colognes, and personal care products from renowned beauty houses and emerging niche fragrance brands.",
+      image: fragranceImage,
+      alt: "Fragrances and personal care products"
     }
   ];
 
@@ -32,15 +32,15 @@ const Divisions = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Broad choices, seamless trade
+            Complete beauty solutions, seamless global distribution
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our product catalog features a wide range of premium products from the beauty, 
-            home & living, and fashion categories.
+            Our comprehensive beauty catalog features premium cosmetics across makeup, skincare, 
+            and fragrance categories from trusted beauty brands worldwide.
           </p>
           <div className="mt-8">
             <Button variant="cta" size="lg">
-              Discover Our Divisions
+              Discover Our Beauty Categories
             </Button>
           </div>
         </div>
@@ -83,10 +83,10 @@ const Divisions = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-elegant rounded-lg p-8 sm:p-12">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Ready to start your global trade journey?
+              Ready to expand your beauty business globally?
             </h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Connect with our team to discuss your sourcing and distribution needs.
+              Connect with our beauty experts to discuss your cosmetics sourcing and distribution needs.
             </p>
             <Button variant="hero" size="lg">
               Get Started Today

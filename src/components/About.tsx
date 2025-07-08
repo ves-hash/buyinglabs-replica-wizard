@@ -16,20 +16,21 @@ const About = () => {
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With a strong team, a growth mindset, and a global network of suppliers and customers, 
-              we achieve extraordinary results. Buying Labs connects suppliers of premium consumer 
-              goods to a wide range of international customers.
+              With a passionate team, beauty expertise, and a global network of cosmetics suppliers and retailers, 
+              we achieve extraordinary results. WholeBeauty connects premium beauty brands and cosmetics 
+              manufacturers to a wide range of international beauty retailers and distributors.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From boutique retailers and niche online stores to industry giants in retail and 
-              e-commerce, they all trust us as their partner. We operate and fulfill worldwide, 
-              making sure that every product is distributed in the most efficient and professional manner.
+              From boutique beauty stores and specialized online cosmetics retailers to major beauty chains 
+              and e-commerce platforms, they all trust us as their beauty distribution partner. We operate 
+              and fulfill worldwide, ensuring every beauty product reaches its destination with the highest 
+              quality standards and professional care.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              All of this is supported by our own warehousing facilities, quality control, 
-              and financing if needed.
+              All of this is supported by our specialized beauty warehousing facilities, cosmetics quality control, 
+              regulatory compliance expertise, and financing solutions tailored for the beauty industry.
             </p>
 
             <div className="pt-4">
@@ -44,7 +45,7 @@ const About = () => {
             <div className="relative overflow-hidden rounded-lg shadow-elegant">
               <img 
                 src={aboutImage}
-                alt="Team member in a meeting for sourcing and distributing premium consumer goods"
+                alt="Beauty industry professionals in a meeting discussing cosmetics sourcing and distribution"
                 className="w-full h-[400px] sm:h-[500px] object-cover transform hover:scale-105 transition-transform duration-500"
               />
             </div>

@@ -9,7 +9,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "info@buyinglabs.com",
+      content: "info@wholebeauty.com",
       description: "Send us a message anytime"
     },
     {
@@ -21,14 +21,14 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Global Trade Center",
-      description: "New York, NY 10001"
+      content: "123 Beauty District Plaza",
+      description: "Los Angeles, CA 90028"
     },
     {
       icon: Globe,
-      title: "Global Reach",
-      content: "Worldwide Operations",
-      description: "Serving customers globally"
+      title: "Global Beauty Network",
+      content: "Worldwide Beauty Distribution",
+      description: "Serving beauty retailers globally"
     }
   ];
 
@@ -41,8 +41,8 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Ready to start your global sourcing journey? Contact our team today to discuss 
-            your premium consumer goods distribution needs.
+            Ready to start your beauty business journey? Contact our cosmetics experts today to discuss 
+            your premium beauty products sourcing and distribution needs.
           </p>
         </div>
 
@@ -51,11 +51,11 @@ const Contact = () => {
           <div className="space-y-6">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Let's Connect
+                Let's Build Beauty Together
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you're a supplier looking to expand your reach or a retailer 
-                seeking premium products, we're here to help you succeed in global trade.
+                Whether you're a beauty brand looking to expand globally or a retailer 
+                seeking premium cosmetics, we're here to help you succeed in the beauty industry.
               </p>
             </div>
 
@@ -137,7 +137,7 @@ const Contact = () => {
                 </label>
                 <Textarea 
                   id="message" 
-                  placeholder="Tell us about your sourcing or distribution needs..."
+                  placeholder="Tell us about your beauty products sourcing or distribution needs..."
                   rows={4}
                   className="border-border focus:border-primary transition-colors duration-300"
                 />

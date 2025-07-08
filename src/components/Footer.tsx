@@ -5,15 +5,15 @@ const Footer = () => {
   const footerLinks = {
     company: [
       { name: "About", href: "#about" },
-      { name: "Divisions", href: "#divisions" },
-      { name: "Logistics", href: "#logistics" },
-      { name: "Technology", href: "#technology" },
+      { name: "Beauty Categories", href: "#divisions" },
+      { name: "Quality Standards", href: "#quality" },
+      { name: "Beauty Expertise", href: "#expertise" },
     ],
     services: [
-      { name: "Sourcing", href: "#sourcing" },
-      { name: "Distribution", href: "#distribution" },
-      { name: "Quality Control", href: "#quality" },
-      { name: "Financing", href: "#financing" },
+      { name: "Beauty Sourcing", href: "#sourcing" },
+      { name: "Global Distribution", href: "#distribution" },
+      { name: "Cosmetics Quality Control", href: "#quality" },
+      { name: "Beauty Brand Financing", href: "#financing" },
     ],
     support: [
       { name: "Contact", href: "#contact" },
@@ -38,21 +38,21 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-8 h-8 bg-primary-foreground rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold text-sm">BL</span>
+                <span className="text-primary font-bold text-sm">WB</span>
               </div>
-              <span className="text-xl font-bold">Buying Labs</span>
+              <span className="text-xl font-bold">WholeBeauty</span>
             </div>
             
             <p className="text-primary-foreground/80 mb-6 leading-relaxed">
-              Your global partner for sourcing and distributing premium consumer goods 
-              worldwide with professional quality and service.
+              Your global partner for sourcing and distributing premium cosmetics and beauty products 
+              worldwide with professional quality standards and industry expertise.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary-foreground/60" />
-                <span className="text-sm text-primary-foreground/80">info@buyinglabs.com</span>
+                <span className="text-sm text-primary-foreground/80">info@wholebeauty.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary-foreground/60" />
@@ -60,7 +60,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-primary-foreground/60" />
-                <span className="text-sm text-primary-foreground/80">New York, NY 10001</span>
+                <span className="text-sm text-primary-foreground/80">Los Angeles, CA 90028</span>
               </div>
             </div>
           </div>
@@ -122,10 +122,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
               <h3 className="font-semibold text-primary-foreground mb-2">
-                Stay Updated
+                Stay Updated on Beauty Trends
               </h3>
               <p className="text-sm text-primary-foreground/80">
-                Get the latest updates on global trade opportunities and premium products.
+                Get the latest updates on beauty industry trends, new cosmetics launches, and global beauty opportunities.
               </p>
             </div>
             
@@ -146,7 +146,7 @@ const Footer = () => {
         <div className="py-6 border-t border-primary-foreground/10">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-sm text-primary-foreground/60">
-              © 2024 Buying Labs. All rights reserved.
+              © 2024 WholeBeauty. All rights reserved.
             </div>
             
             <div className="flex items-center space-x-4">
