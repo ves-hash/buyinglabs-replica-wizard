@@ -16,21 +16,19 @@ const About = () => {
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With a passionate team, beauty expertise, and a global network of cosmetics suppliers and retailers, 
-              we achieve extraordinary results. WholeBeauty connects premium beauty brands and cosmetics 
-              manufacturers to a wide range of international beauty retailers and distributors.
+              At WholeBeauty, we deliver exceptional results through a passionate team, deep industry knowledge, and a global network of trusted cosmetics suppliers and retail partners. We connect premium beauty brands and manufacturers with a broad spectrum of international retailers and distributors.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              From boutique beauty stores and specialized online cosmetics retailers to major beauty chains 
-              and e-commerce platforms, they all trust us as their beauty distribution partner. We operate 
-              and fulfill worldwide, ensuring every beauty product reaches its destination with the highest 
-              quality standards and professional care.
+              From beauty stores and online retailers to established beauty chains and global e-commerce platforms, our partners rely on us for consistent, high-quality distribution. We manage worldwide fulfillment with precision—ensuring every product arrives on time, in perfect condition, and in full compliance with industry standards.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              All of this is supported by our specialized beauty warehousing facilities, cosmetics quality control, 
-              regulatory compliance expertise, and financing solutions tailored for the beauty industry.
+              Our operations are backed by dedicated beauty warehousing facilities, rigorous quality control processes, regulatory compliance expertise, and tailored financing solutions designed specifically for the beauty sector.
+            </p>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed font-semibold">
+              WholeBeauty — your trusted partner in global beauty distribution.
             </p>
 
             <div className="pt-4">

@@ -2,9 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import beautyImage from "@/assets/beauty-category.jpg";
 import skincareImage from "@/assets/skincare-category.jpg";
-import fragranceImage from "@/assets/fragrance-category.jpg";
 
-const Divisions = () => {
+const Products = () => {
   const categories = [
     {
       title: "Makeup & Color Cosmetics",
@@ -17,36 +16,29 @@ const Divisions = () => {
       description: "Premium skincare solutions including serums, moisturizers, cleansers, anti-aging treatments, and specialized skincare products for all skin types.",
       image: skincareImage,
       alt: "Skincare products and treatments"
-    },
-    {
-      title: "Fragrances & Personal Care",
-      description: "Luxury fragrances, perfumes, colognes, and personal care products from renowned beauty houses and emerging niche fragrance brands.",
-      image: fragranceImage,
-      alt: "Fragrances and personal care products"
     }
   ];
 
   return (
-    <section id="divisions" className="py-20 bg-background">
+    <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Complete beauty solutions, seamless global distribution
+            Wholesale Cosmetics Supplier
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our comprehensive beauty catalog features premium cosmetics across makeup, skincare, 
-            and fragrance categories from trusted beauty brands worldwide.
+            At Wholebeauty, we offer a wide range of beauty products, including makeup, skincare, and body care items. We work with both well-known international brands and niche products, such as Korean cosmetics, to meet the diverse needs of our customers.
           </p>
           <div className="mt-8">
             <Button variant="cta" size="lg">
-              Discover Our Beauty Categories
+              Contact us today to request our wholesale price list
             </Button>
           </div>
         </div>
 
         {/* Categories Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {categories.map((category, index) => (
             <Card key={category.title} className="group hover:shadow-elegant transition-all duration-500 overflow-hidden border-0 shadow-card">
               <div className="relative overflow-hidden">
@@ -79,18 +71,40 @@ const Divisions = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-elegant rounded-lg p-8 sm:p-12">
-            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-              Ready to expand your beauty business globally?
-            </h3>
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Connect with our beauty experts to discuss your cosmetics sourcing and distribution needs.
-            </p>
-            <Button variant="hero" size="lg">
-              Get Started Today
-            </Button>
+        {/* Why Choose Us */}
+        <div className="mt-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-12 text-center">
+            Why Choose Us?
+          </h3>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <h4 className="text-lg font-bold text-foreground mb-3">Authentic Brand Selection</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                We supply original beauty products from well-known international brands, as well as innovative items from emerging niche labels. This gives you access to both trusted names and fresh, unique products for your store.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h4 className="text-lg font-bold text-foreground mb-3">Competitive Pricing</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                Thanks to our strong relationships with suppliers, we're able to offer great prices on skincare, makeup, and body care items—helping you stay competitive without sacrificing quality.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h4 className="text-lg font-bold text-foreground mb-3">Global Shipping</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                Our in-house warehouse team ensures fast and efficient order processing. We ship worldwide, and our logistics experts make sure your deliveries clear customs smoothly, in line with local regulations.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <h4 className="text-lg font-bold text-foreground mb-3">Trust</h4>
+              <p className="text-muted-foreground leading-relaxed">
+                We are working in close relationships with our suppliers and customers, our professional experience is based on trust and mutual respect with our partners.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -98,4 +112,4 @@ const Divisions = () => {
   );
 };
 
-export default Divisions;
+export default Products;

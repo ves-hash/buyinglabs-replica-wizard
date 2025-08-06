@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/hero-bg-bright.jpg";
 
 const Hero = () => {
   return (
@@ -17,13 +17,12 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-hero-text mb-6 leading-tight">
-          Your global partner for sourcing and distributing 
-          <span className="block text-primary-foreground">premium cosmetics worldwide</span>
+          Your Global Partner for 
+          <span className="block text-primary-foreground">Beauty Distribution</span>
         </h1>
         
         <p className="text-lg sm:text-xl text-hero-text/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Connecting beauty brands and cosmetics suppliers to international retailers 
-          with professional distribution, quality control, and global reach.
+          We link premium beauty brands and cosmetic producers with international retail markets through efficient sourcing, reliable logistics, strict quality assurance, and an expansive global presence.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,10 +15,20 @@ const Header = () => {
   const navItems = [
     { name: "HOME", href: "#home" },
     { name: "ABOUT", href: "#about" },
-    { name: "DIVISIONS", href: "#divisions" },
-    { name: "LOGISTICS", href: "#logistics" },
-    { name: "TECHNOLOGY", href: "#technology" },
-    { name: "CAREER", href: "#career" },
+    { name: "PRODUCTS", href: "#products" },
+  ];
+
+  const services = [
+    {
+      title: "Buy From Us",
+      description: "Streamlined procurement solutions for beauty retailers",
+      href: "#buy-from-us"
+    },
+    {
+      title: "Supply To Us",
+      description: "Strategic partnerships for beauty brands and suppliers", 
+      href: "#supply-to-us"
+    }
   ];
 
   return (
@@ -39,6 +56,33 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
+            
+            {/* Services Dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 bg-transparent hover:bg-transparent data-[state=open]:bg-transparent">
+                    SERVICES
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid w-[400px] gap-3 p-4">
+                      {services.map((service) => (
+                        <a
+                          key={service.title}
+                          href={service.href}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">{service.title}</div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {service.description}
+                          </p>
+                        </a>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </nav>
 
           {/* Contact Button */}
@@ -74,6 +118,22 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              
+              {/* Mobile Services */}
+              <div className="px-3 py-2">
+                <div className="text-sm font-medium text-muted-foreground mb-2">SERVICES</div>
+                {services.map((service) => (
+                  <a
+                    key={service.title}
+                    href={service.href}
+                    className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {service.title}
+                  </a>
+                ))}
+              </div>
+              
               <div className="px-3 py-2">
                 <Button variant="hero" className="w-full">
                   CONTACT US
