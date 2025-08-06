@@ -26,18 +26,10 @@ const Hero = () => {
           We link premium beauty brands and cosmetic producers with international retail markets through efficient sourcing, reliable logistics, strict quality assurance, and an expansive global presence.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex justify-center">
           <Button 
             variant="hero" 
             size="lg"
-            onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            DISCOVER MORE
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="bg-background/10 border-hero-text text-hero-text hover:bg-background/20"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             CONTACT US
