@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import aboutImage from "@/assets/about-team.jpg";
 
@@ -32,7 +33,11 @@ const About = () => {
             </p>
 
             <div className="pt-4">
-              <Button variant="cta" size="lg">
+              <Button 
+                variant="cta" 
+                size="lg"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 More About Us
               </Button>
             </div>

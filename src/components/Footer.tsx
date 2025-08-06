@@ -1,25 +1,16 @@
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+
+import { Linkedin, Twitter, Facebook } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
     company: [
+      { name: "Home", href: "#home" },
       { name: "About", href: "#about" },
-      { name: "Beauty Categories", href: "#divisions" },
-      { name: "Quality Standards", href: "#quality" },
-      { name: "Beauty Expertise", href: "#expertise" },
+      { name: "Products", href: "#products" },
     ],
     services: [
-      { name: "Beauty Sourcing", href: "#sourcing" },
-      { name: "Global Distribution", href: "#distribution" },
-      { name: "Cosmetics Quality Control", href: "#quality" },
-      { name: "Beauty Brand Financing", href: "#financing" },
-    ],
-    support: [
-      { name: "Contact", href: "#contact" },
-      { name: "Career", href: "#career" },
-      { name: "Privacy Policy", href: "#privacy" },
-      { name: "Terms of Service", href: "#terms" },
+      { name: "Buy From Us", href: "#buy-from-us" },
+      { name: "Supply To Us", href: "#supply-to-us" },
     ]
   };
 
@@ -33,7 +24,7 @@ const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-12 grid lg:grid-cols-4 gap-8">
+        <div className="py-12 grid lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
@@ -49,26 +40,17 @@ const Footer = () => {
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-primary-foreground/60" />
-                <span className="text-sm text-primary-foreground/80">info@wholebeauty.com</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-primary-foreground/60" />
-                <span className="text-sm text-primary-foreground/80">+1 (555) 123-4567</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-primary-foreground/60" />
-                <span className="text-sm text-primary-foreground/80">Los Angeles, CA 90028</span>
-              </div>
+            <div className="space-y-2">
+              <p className="text-sm text-primary-foreground/80">info@wholebeauty.com</p>
+              <p className="text-sm text-primary-foreground/80">+1 (555) 123-4567</p>
+              <p className="text-sm text-primary-foreground/80">Los Angeles, CA 90028</p>
             </div>
           </div>
 
           {/* Links Sections */}
-          <div className="lg:col-span-3 grid sm:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 grid sm:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-semibold text-primary-foreground mb-4">Company</h3>
+              <h3 className="font-semibold text-primary-foreground mb-4">Navigation</h3>
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
@@ -97,47 +79,6 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-primary-foreground mb-4">Support</h3>
-              <ul className="space-y-3">
-                {footerLinks.support.map((link) => (
-                  <li key={link.name}>
-                    <a 
-                      href={link.href} 
-                      className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-300"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="py-8 border-t border-primary-foreground/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="font-semibold text-primary-foreground mb-2">
-                Stay Updated on Beauty Trends
-              </h3>
-              <p className="text-sm text-primary-foreground/80">
-                Get the latest updates on beauty industry trends, new cosmetics launches, and global beauty opportunities.
-              </p>
-            </div>
-            
-            <div className="flex gap-3 w-full md:w-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-2 rounded-md bg-primary-foreground/10 text-primary-foreground placeholder-primary-foreground/60 border border-primary-foreground/20 focus:border-primary-foreground/40 transition-colors duration-300"
-              />
-              <Button variant="secondary" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90">
-                Subscribe
-              </Button>
             </div>
           </div>
         </div>

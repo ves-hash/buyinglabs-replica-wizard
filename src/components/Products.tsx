@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import beautyImage from "@/assets/beauty-category.jpg";
@@ -31,7 +32,7 @@ const Products = () => {
             At Wholebeauty, we offer a wide range of beauty products, including makeup, skincare, and body care items. We work with both well-known international brands and niche products, such as Korean cosmetics, to meet the diverse needs of our customers.
           </p>
           <div className="mt-8">
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Contact us today to request our wholesale price list
             </Button>
           </div>
@@ -57,15 +58,6 @@ const Products = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {category.description}
                 </p>
-                
-                <div className="mt-4 pt-4 border-t border-border">
-                  <Button 
-                    variant="ghost" 
-                    className="text-primary hover:text-primary-hover p-0 h-auto font-medium"
-                  >
-                    Learn More →
-                  </Button>
-                </div>
               </CardContent>
             </Card>
           ))}

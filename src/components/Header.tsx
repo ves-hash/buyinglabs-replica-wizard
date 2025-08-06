@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import {
   NavigationMenu,
@@ -87,7 +88,10 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <Button variant="hero">
+            <Button 
+              variant="hero"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               CONTACT US
             </Button>
           </div>
@@ -135,7 +139,14 @@ const Header = () => {
               </div>
               
               <div className="px-3 py-2">
-                <Button variant="hero" className="w-full">
+                <Button 
+                  variant="hero" 
+                  className="w-full"
+                  onClick={() => {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    setIsMenuOpen(false);
+                  }}
+                >
                   CONTACT US
                 </Button>
               </div>
