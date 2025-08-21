@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fefefe;
+  --ink: #0d141f;
+}
+
+@theme inline {
+  --color-primary: #ea1d25;
+  --color-accent1: #f15a22;
+  --color-accent2: #f39572;
+  --color-ink: #0d141f;
+  --color-slate: #32484c;
+  --color-paper: #fefefe;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 8px;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md px-4 py-2 font-medium transition bg-primary text-white hover:opacity-90 active:opacity-80;
+}
+
+.card {
+  @apply rounded-lg border border-slate/20 bg-white p-4 shadow-sm;
+}
